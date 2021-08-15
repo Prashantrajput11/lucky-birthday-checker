@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Birthday App</title>
+  </head>
+  <body>
+    <header><h1>Welcome To LuckyBirthday.com</h1></header>
+
+    <div class="container">
+      <label>
+        Date Of Birth :
+        <input type="date" name="" id="user-birth-date" />
+      </label>
+
+      <label>
+        Lucky Number :
+        <input type="number" name="" id="user-lucky-number" />
+      </label>
+
+      <button id="check">check</button>
+      <div class="show-success">
+        <p id="text-message">woah ! lucky boy your birthday is lucky</p>
+        <img
+          src="./images/undraw_happy_birthday_s72n.svg"
+          alt=""
+          srcset=""
+          height="90"
+          width="60"
+        />
+      </div>
+
+      <div class="show-failure">
+        <p id="text-message">
+          Oops! Your bday isn't a lucky number but wait we got a gift for you!🎁
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <p>made with 💛</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
