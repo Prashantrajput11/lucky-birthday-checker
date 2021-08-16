@@ -2,6 +2,7 @@ let user_birth_date = document.querySelector("#user-birth-date");
 let user_lucky_number = document.querySelector("#user-lucky-number");
 let show_success = document.querySelector(".show-success");
 let show_failure = document.querySelector(".show-failure");
+let show_validate = document.querySelector(".show-validate");
 let check = document.querySelector("#check");
 
 check.addEventListener("click", checkLuckyOrNot);
@@ -13,14 +14,16 @@ check.addEventListener("click", checkLuckyOrNot);
 function checkLuckyOrNot() {
   var sum_op = calculateSum(user_birth_date);
 
-  if (sum_op % user_lucky_number.value === 0) {
-    console.log("lucky");
+  if (user_birth_date.value === "" || user_lucky_number.value === "") {
+    show_validate.innerText = "please Enter Valid Values";
+  } else if (sum_op % user_lucky_number.value === 0) {
     show_success.style.display = "block";
     show_failure.style.display = "none";
+    show_validate.innerText = "";
   } else {
-    console.log("not lucky");
     show_failure.style.display = "block";
     show_success.style.display = "none";
+    show_validate.innerText = "";
   }
 }
 

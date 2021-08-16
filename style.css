@@ -47,6 +47,9 @@ h1 {
   width: 50%;
   text-align: center;
 }
+.show-validate {
+  text-align: center;
+}
 
 #check {
   background-color: rgb(230 126 34);
