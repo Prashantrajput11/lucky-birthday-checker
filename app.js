@@ -4,6 +4,12 @@ let show_success = document.querySelector(".show-success");
 let show_failure = document.querySelector(".show-failure");
 let show_validate = document.querySelector(".show-validate");
 let check = document.querySelector("#check");
+let close = document.querySelector("#close-privacy");
+let privacy_note = document.querySelector(".privacy-note");
+close.addEventListener("click", function () {
+  console.log("closed");
+  privacy_note.style.display = "none";
+});
 
 check.addEventListener("click", checkLuckyOrNot);
 

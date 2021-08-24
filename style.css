@@ -63,3 +63,19 @@ h1 {
   font-size: 20px;
   display: block;
 }
+.privacy-note {
+  background-color: rgb(230 126 34);
+  width: 60%;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px auto;
+}
+
+.privacy-note button {
+  padding: 1.5px;
+  background-color: #fff;
+  border: none;
+  font-size: 13px;
+  margin: 2px;
+  border-radius: 4px;
+}
